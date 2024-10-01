@@ -1,0 +1,89 @@
+.burguerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.burguer {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.burguer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #F4AE00;
+}
+
+.burguer p {
+  margin-bottom: 15px;
+  color: #dedede;
+}
+.description {
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+
+.burgerImage {
+  width: 100%;
+  height: auto; 
+  border-radius: 10px;
+  margin-bottom: 30px; 
+}
+
+.buyButton {
+  background-color: #F4AE00;
+  color: black;
+  border: none;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+
+.buyButton:hover {
+  background-color: #e09c00;
+}
+
+.priceButton {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto; 
+  align-items: center;
+}
+
+@media (max-width: 1100px) {
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .menu {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}

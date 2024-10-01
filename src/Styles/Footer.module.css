@@ -1,0 +1,7 @@
+.footer {
+  text-align: center;
+  padding: 15px 0px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #dedede;
+}

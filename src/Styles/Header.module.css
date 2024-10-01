@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 25px;
+  align-items: center;
+  color: #dedede;
+}
+
+.logo {
+  color: #f4ae00;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav li {
+  color: #dedede;
+}
+
+.nav li:hover {
+  color: #f4ae00;
+}
+
+.shop {
+  width: 35px;
+  position: relative;
+  cursor: pointer;
+}
+
+.cartContainer {
+  position: relative;
+}
+
+.cartCount {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #f4ae00;
+  color: #131313;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav {
+    margin: 0px 15px;
+  }
+}
